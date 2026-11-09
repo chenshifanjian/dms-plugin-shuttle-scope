@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+"""shuttle-scope 启动器：把 src/ 加进 sys.path 后交给 shuttle_scope.cli。"""
+
+import os
+import pathlib
+import sys
+
+here = pathlib.Path(os.path.realpath(__file__))
+sys.path.insert(0, str(here.parent.parent / "src"))
+
+from shuttle_scope.cli import main  # noqa: E402
+
+if __name__ == "__main__":
+    sys.exit(main())

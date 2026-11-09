@@ -1,0 +1,14 @@
+{
+    "id": "shuttleScope",
+    "name": "Shuttle 同步范围",
+    "description": "在状态栏勾选哪些文件夹参与 NAS 双向同步：开关写进 Shuttle 的 exclude，改完约 1 秒热生效",
+    "version": "0.5.0",
+    "author": "chenshifanjian",
+    "type": "widget",
+    "capabilities": ["dankbar-widget"],
+    "component": "./ShuttleScopeWidget.qml",
+    "settings": "./ShuttleScopeSettings.qml",
+    "icon": "cloud_sync",
+    "requires_dms": ">=1.2.0",
+    "permissions": ["process", "settings_read", "settings_write"]
+}
