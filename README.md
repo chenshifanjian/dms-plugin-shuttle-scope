@@ -4,7 +4,7 @@
 
 ![面板](docs/截图-连接与同步时间面板.jpg)
 
-底层同步仍由 [Shuttle](https://github.com/DeedleFake/shuttle) 完成（SMB 2/3、用户级 systemd、不需要 root，也不用 `mount.cifs` / fstab）。这个项目只做「看得见、点得动」的那一层。
+底层同步仍由 [Shuttle](https://github.com/fqazzazee/shuttle) 完成（SMB 2/3、用户级 systemd、不需要 root，也不用 `mount.cifs` / fstab）。这个项目只做「看得见、点得动」的那一层。
 
 ## 功能
 
@@ -19,7 +19,7 @@
 ## 依赖
 
 - **DankMaterialShell** ≥ 1.2.0（Quickshell，`dms.service`）
-- **[Shuttle](https://github.com/DeedleFake/shuttle)**，且已有一份能跑的配置（`~/.config/shuttle/config.toml` 里的 `[shares.*]` / `[profiles.*]` / `[shuttles.*]`）
+- **[Shuttle](https://github.com/fqazzazee/shuttle)**，且已有一份能跑的配置（`~/.config/shuttle/config.toml` 里的 `[shares.*]` / `[profiles.*]` / `[shuttles.*]`）
 - `smbclient`（Samba 客户端，用于测试连接与列共享）
 - `secret-tool`（libsecret，密码只存系统 keyring）
 - `python3` ≥ 3.11（`tomllib`）
